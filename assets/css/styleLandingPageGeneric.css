@@ -28,6 +28,10 @@ color: #D2D3DC !important;
     background-color: #111C26;
 }
 
+.bg-white{
+    background-color: #ffffff;
+}
+
 .mt-b{
     margin-top: 2.188rem;
 }
@@ -151,10 +155,10 @@ footer a{
 
 .btn-primary,
 .btn-primary:not([href]):not([tabindex]),
-.btn-success{
+.ic-class-form-button-submit.btn{
     color: #ffffff!important;
-    background-color: #FF7800;
-    border-color: #FF7800;
+    background-color: #CD2469;
+    border-color: #CD2469;
 }
 
 .btn-secondary,
@@ -183,8 +187,13 @@ a.btn-secondary:not([href]):not([tabindex]){
     margin-bottom:4.563rem;/*73px*/
 }
 
-.ic-class-form-button-submit.btn.btn-success {
+.ic-class-form-button-submit.btn {
     margin-top:0px;
+    margin-bottom:20px;
+}
+
+.ic-class-form-button-submit.btn:hover {
+    opacity:0.8;
 }
 
 .ic-pb-v{
@@ -217,107 +226,14 @@ h3.ic-form-title{
     background-color: #1D2351;
 }
 
-.ic-social-media-list{
-    padding-top:13px;/*47+13*/
-    margin-bottom: 60px;
-}
-
-.ic-social-media-list a {
-	width: auto;
-    height: 42px;
-    display: block;   
-}
-
-.ic-social-media-list a:not(:last-child){
-	margin-right: 16px;
-}
-
-.ic-icono {
-	width: 42px;
-    height: 42px;
-}
-
-.ic-icono:hover {
-    background-color: #FF7800;
-    border-radius: 50%;
-    background-position:center;
-}
 
 .img-dos {
     max-width:542px;
     width: 100%;
     max-width: 100%;
-    margin: auto 0px 0px 0px;
+    margin: 80x 0px 0px 0px;
 }
 
-.img-typ{
-    max-width: 100%;
-    margin: 110px auto 0px auto;
-}
-
-.img-typ-tablet{
-    max-width: 100%;
-    margin: auto -100px 43px auto;  
-}
-
-.container {
-    position: relative;
-}
-
-.header-terminos i{
-    font-family: 'Font Awesome 5 Free';
-    font-style: normal!important;
-    font-size:20px;
-    margin-right: 20px;
-}
-
-.header-terminos  .fa-angle-left {
-    display: inline-block;
-    padding-left: 0px; 
-    border: none;
-    font-weight: 600;
-    color:#FF7800;
-}
-
-.header-terminos  .ic-breadcrumb a {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal!important;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: capitalize;
-    color: #FF7800;
-    padding-left: 0px;
-    margin-top: 45px;
-    margin-bottom: 30px;
-    align-items: center;
-}
-
-.ic-breadcrumb{
-    margin-top: 62px;
-}
-
-.header-terminos h1{
-    margin-top:20px;
-    margin-bottom:80px;
-}
-
-.content-terminos h3{
-    font-family: "Open Sans", sans-serif;
-    font-size: 25px;
-    line-height: 35px;
-    font-weight:bold;
-    margin-top:30px;
-    margin-bottom: 30px;
-}
-
-.content-terminos h3.first {
-    margin-top:85px;
-}
-
-.content-terminos p.last{
-    margin-bottom:80px;
-}
 
 
 /*--------------------------------------- media queries LP && TYP*/
@@ -535,7 +451,6 @@ SVG Images DeBug
 
 /*--------------------------------------- form*/
 
-
 .ic-dynamic-form-container{
     -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -576,10 +491,7 @@ h3.ic-form-title{
     display: none;
 }
 
-.ic-class-form-input,
-.ic-class-form-select,
-.ic-class-form-textarea,
-textarea{
+.ic-class-form-input{
     border-radius: 0px;
     border: 1px solid #CD2469;
     padding: 11px 10px;
@@ -590,30 +502,11 @@ textarea{
     color: #CD2469;
 }
 
-.ic-class-form-select{
-    padding: 0px 10px;
-}
-form .custom-select,
-form .form-control{
-    font-size: 0.75rem;/*12px*/
-    color: #CD2469;
-}
-
 .ic-class-form-input,
 .ic-class-form-select{
     height: 38px;
 }
 
-.ic-class-form-input:focus,
-.ic-class-form-select:focus,
-textarea:focus{
-    border-color: #CD2469;
-    border: 2px solid;
-    outline: none;
-    box-shadow: none;
-    font-weight: 600;
-    color: #CD2469;
-}
 
 .ic-class-form-check-input:not(.ic-class-form-check-legal) {
     margin-left: 10px;
@@ -626,22 +519,20 @@ textarea:focus{
 
 
 .ic-class-form-check-legal{
-    margin-right: 0px;
     align-items: flex-start; 
-    margin-top: 10px;
+    padding:15px;
+    border-bottom:1px solid #D2D3DC ;
 }
 
 .ic-class-form-check-label-legal{
-    padding-bottom: 0px;
-    
+    padding-bottom: 0px;    
     text-align: left;
-    font-family: "Open Sans", sans-serif !important;
-    font-size: 11px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    color: #707070;
-    margin-left:10px;  
-    margin-top: -2px;  
+    color: #E2437D;
+    margin: 0px;
 }
 
 .ic-class-form-check-label-legal a{
