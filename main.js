@@ -70,10 +70,10 @@ function main() {
         },        
     ];
 
-    let tabela = document.getElementById("tabela");
+    let listaPerguntas = document.getElementById("listaPerguntas");
     perguntas.forEach(element => {
         let linha = criaLinha(element);
-        tabela.appendChild(linha);
+        listaPerguntas.appendChild(linha);
     });
 }
 

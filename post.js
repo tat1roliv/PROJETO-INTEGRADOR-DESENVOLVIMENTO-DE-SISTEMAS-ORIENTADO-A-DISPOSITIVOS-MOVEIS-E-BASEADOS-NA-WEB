@@ -12,19 +12,32 @@ function post(url, body) {
     return request.responseText
 }
 
+function obtemListaCheckBox(){
+    var todosCheckBox = document.querySelectorAll("input[type='checkbox'");
 
-function cadastraUsuario() {
-    event.preventDefault()
-    let url = "http://127.0.0.1:5000/users"
-    let nome = document.getElementById("nome").value
-    let email = document.getElementById("email").value
-    console.log(nome)
-    console.log(email)
+    var listaCheckBox = [];
 
-    body = {
-        "name": nome,
-        "email": email
+    for (var i = 0; i < todosCheckBox.length; i++) {
+
+        let checkBoxAtual = 
+        {
+            id: todosCheckBox[i].id,
+            marcado:  todosCheckBox[i].checked,
+        };
+
+        listaCheckBox.push(checkBoxAtual);       
     }
 
-    post(url, body)
+    return listaCheckBox;
+}
+
+function enviaFormolario() {
+    event.preventDefault()
+    let url = "http://127.0.0.1:5000/enviaFormolario"
+
+    alert("Eu sou um alert!");
+
+    let lista = obtemListaCheckBox();
+
+    post(url, lista)
 }
