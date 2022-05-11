@@ -35,8 +35,6 @@ function enviaFormolario() {
     event.preventDefault()
     let url = "http://127.0.0.1:8080/resposta"
 
-    alert("Eu sou um alert!");
-
     let lista = obtemListaCheckBox();
 
     post(url, lista)
