@@ -20,7 +20,7 @@ function criaLinha(pergunta) {
     label.setAttribute('class', 'ic-class-form-check-label-legal form-check-label')
     label.setAttribute('for', pergunta.id)
 
-    label.innerHTML = pergunta.descricao
+    label.innerHTML = pergunta.pergunta
     
     divLabel.appendChild(label);
 
@@ -45,30 +45,9 @@ function criaLinha(pergunta) {
 }
 
 function main() {
-    //let data = get("http://127.0.0.1:5000/get/perguntas");
-    //let perguntas = JSON.parse(data);
-    let perguntas = [
-        {
-            id: 1,
-            descricao: "O seu companheiro te bate?",
-        }, 
-        {
-            id: 2,
-            descricao: "O seu companheiro te violenta?",
-        },    
-        {
-            id: 3,
-            descricao: "O seu companheiro te violenta3?",
-        },    
-        {
-            id: 4,
-            descricao: "O seu companheiro te violenta4?",
-        },    
-        {
-            id: 5,
-            descricao: "O seu companheiro te violenta?5",
-        },        
-    ];
+    let data = get("http://127.0.0.1:8080/");
+
+    let perguntas = JSON.parse(data);
 
     let listaPerguntas = document.getElementById("listaPerguntas");
     perguntas.forEach(element => {
